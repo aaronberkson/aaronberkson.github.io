@@ -50956,7 +50956,7 @@ function startBasicScene() {
     // TEXT
     var loader = new THREE.FontLoader();
     loader.load('./fonts/optimer_bold.typeface.json', function (font) {
-        var geometry = new THREE.TextGeometry('three.js', {
+        var geometry = new THREE.TextGeometry('', {
             font: font,
             size: 5,
             height: 1,
@@ -50979,7 +50979,7 @@ function startBasicScene() {
         scene.add(textMesh1);
     });
     loader.load('./fonts/Teko_Medium_Regular.json', function (font) {
-        var geometry = new THREE.TextGeometry('3D TEXT', {
+        var geometry = new THREE.TextGeometry('Step One: Create GitHub Account.', {
             font: font,
             size: 5,
             height: 2,
@@ -51009,7 +51009,7 @@ function startBasicScene() {
             opacity: 0.4,
             side: THREE.DoubleSide
         });
-        var message = "(´°_°`)";
+        var message = "";
         var shapes = font.generateShapes(message, 20);
         var geometry = new THREE.ShapeGeometry(shapes);
         geometry.computeBoundingBox();

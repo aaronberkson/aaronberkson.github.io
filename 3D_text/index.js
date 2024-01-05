@@ -50981,7 +50981,7 @@ function startBasicScene() {
     loader.load('./fonts/Teko_Medium_Regular.json', function (font) {
         var geometry = new THREE.TextGeometry('Step One: Create GitHub Account.', {
             font: font,
-            size: 5,
+            size: 2,
             height: 2,
             curveSegments: 10,
             bevelEnabled: false,
@@ -50996,8 +50996,8 @@ function startBasicScene() {
         ];
         var textMesh2 = new THREE.Mesh(geometry, materials);
         textMesh2.castShadow = true;
-        textMesh2.position.y += 5;
-        textMesh2.position.x -= 6;
+        textMesh2.position.y += 0;
+        textMesh2.position.x -= 0;
         textMesh2.rotation.y = -0.25;
         scene.add(textMesh2);
     });

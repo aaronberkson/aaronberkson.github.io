@@ -50991,8 +50991,8 @@ function startBasicScene() {
             bevelThickness: 1
         });
         var materials = [
-            new THREE.MeshPhongMaterial({ color: 0x708090 }),
-            new THREE.MeshPhongMaterial({ color: 0x7e8d9b }) // side
+            new THREE.MeshPhongMaterial({ color: 0xa8325c }),
+            new THREE.MeshPhongMaterial({ color: 0x540722 }) // side
         ];
         var textMesh2 = new THREE.Mesh(geometry, materials);
         textMesh2.castShadow = true;

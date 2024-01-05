@@ -50991,14 +50991,14 @@ function startBasicScene() {
             bevelThickness: 1
         });
         var materials = [
-            new THREE.MeshPhongMaterial({ color: 0xff6600 }),
-            new THREE.MeshPhongMaterial({ color: 0x0000ff }) // side
+            new THREE.MeshPhongMaterial({ color: 0xa8325c }),
+            new THREE.MeshPhongMaterial({ color: 0x540722 }) // side
         ];
         var textMesh2 = new THREE.Mesh(geometry, materials);
         textMesh2.castShadow = true;
         textMesh2.position.y += 20;
         textMesh2.position.x -= 20;
-        textMesh2.rotation.y = -0;
+        textMesh2.rotation.y = -0.1;
         scene.add(textMesh2);
     });
     loader.load('fonts/Teko_Medium_Regular.json', function (font) {

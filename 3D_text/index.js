@@ -50981,7 +50981,7 @@ function startBasicScene() {
     loader.load('./fonts/Teko_Medium_Regular.json', function (font) {
         var geometry = new THREE.TextGeometry('Step One – Create a GitHub account.\nStep Two – Create a repository.\nStep Three – Create index.html & image files.\nStep Four – Upload.\nStep Five – Commit.\nStep Six – Test your repository URL.\n', {
             font: font,
-            size: 1,
+            size: 2,
             height: 2,
             curveSegments: 10,
             bevelEnabled: false,

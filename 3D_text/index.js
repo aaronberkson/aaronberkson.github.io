@@ -50979,7 +50979,7 @@ function startBasicScene() {
         scene.add(textMesh1);
     });
     loader.load('./fonts/Teko_Medium_Regular.json', function (font) {
-        var geometry = new THREE.TextGeometry('Step One – Create a GitHub account.\nStep Two – Create a repository.\nStep Three – Create an index.html & image file.\nStep Four – Upload.\nStep Five – Commit.\nStep Six – Test your repository URL.\n', {
+        var geometry = new THREE.TextGeometry('1. Create a GitHub account.\n2. Create a repository.\n3. Create an index.html & image file.\n4. Upload.\n5. Commit.\n6. – Test your repository URL.\n', {
             font: font,
             size: 2,
             height: 2,
@@ -50997,7 +50997,7 @@ function startBasicScene() {
         var textMesh2 = new THREE.Mesh(geometry, materials);
         textMesh2.castShadow = true;
         textMesh2.position.y += 20;
-        textMesh2.position.x -= 20;
+        textMesh2.position.x -= 16;
         textMesh2.rotation.y = -0.1;
         scene.add(textMesh2);
     });

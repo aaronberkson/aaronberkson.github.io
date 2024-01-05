@@ -51106,7 +51106,7 @@ var exports = __webpack_exports__;
   \**********************/
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-var basic_scene_1 = __webpack_require__(/*! ./basic_scene */ "./src/basic_scene.ts");
+var basic_scene_1 = __webpack_require__(/*! ./basic_scene */ "./src/star_wars_scene.ts");
 basic_scene_1.startBasicScene();
 // startStarWarsScene();
 // startDingbatsScene();

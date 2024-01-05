@@ -50996,8 +50996,8 @@ function startBasicScene() {
         ];
         var textMesh2 = new THREE.Mesh(geometry, materials);
         textMesh2.castShadow = true;
-        textMesh2.position.y += 0;
-        textMesh2.position.x -= 0;
+        textMesh2.position.y += 10;
+        textMesh2.position.x -= 18;
         textMesh2.rotation.y = -0.25;
         scene.add(textMesh2);
     });

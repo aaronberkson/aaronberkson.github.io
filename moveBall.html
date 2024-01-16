@@ -1,0 +1,80 @@
+
+<div id="ball" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:green;
+  ">  
+</div>
+
+<div id="box" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:550px;
+  height:550px;
+  border-radius:0%;
+  border-style: solid;
+  border-color:silver;
+  border-width: thick;
+  ">  
+</div>
+
+<script>
+
+var velocityX = 10;
+var positionX = 0;
+var directionX = 'right';
+
+var velocityY = 3;
+var positionY = 0;
+var directionY = 'down';
+
+
+var ball = document.getElementById('ball');
+
+
+// YOUR CODE 
+// ----------------
+function moveBall (){
+
+  if (directionX == 'right'){
+    positionX = positionX + velocityX;
+    ball.style.left = positionX + 'px';  
+  }
+  else if (directionX == 'left') {
+    positionX = positionX - velocityX;
+    ball.style.left = positionX + 'px';  
+  }
+  if (positionX > 500) {
+    directionX = 'left';
+    ball.style.backgroundColor = rgb(255,0,0);
+  } else if (positionX == 0) {
+    directionX = 'right'
+    ball.style.backgroundColor = rgb(0,0,255);
+  }
+
+  if (directionY == 'down'){
+    positionY = positionY + velocityY;
+    ball.style.top = positionY + 'px';  
+  }
+  else if (directionY == 'up') {
+    positionY = positionY - velocityY;
+    ball.style.top = positionY + 'px';  
+  }
+  if (positionY > 500) {
+    directionY = 'up';
+  } else if (positionY == 0) {
+    directionY = 'down'
+  }
+
+}
+
+setInterval (moveBall,20);
+
+</script>

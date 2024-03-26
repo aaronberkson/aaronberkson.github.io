@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aaron Berkson's GitHub</title>
+    <!-- Using GitHub's favicons and mask icons for Chrome and Safari -->
+    <link rel="mask-icon" href="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" color="#000000">
+    <link rel="alternate icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+    <!-- Includes for Bootstrap, Bootstrap icons, and my own custom styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Includes for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header-wrapper" id="topheader">
+<div class="cell profile"><img src="./images/aaron_berkson_profile_pic.jpg" alt="Proflie Pic" class="image-profile"></div>
+<div class="cell title h2">Aaron Berkson // Github Portfolio</div>
+<div class="cell navbar h4">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" >
+    <div class="container-fluid" background-color="#1C2639">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active" id="home_tab">
+            <a class="nav-link bi bi-house-fill d-flex align-items-center" aria-current="page" href="#" onClick="selectHome();">&nbsp;Home</a>
+          </li>
+          <li class="nav-item dropdown" id="projects_tab">
+            <a class="nav-link dropdown-toggle bi bi-stack d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">&nbsp;Projects
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item h4" href="#" onClick="selectProject('pacmen');">Pac-Men</a></li>
+              <li><a class="dropdown-item h4" href="#" onClick="selectProject('eyes');">Eyes</a></li>
+              <li><a class="dropdown-item h4" href="#" onClick="selectProject('bus');">Bus Tracker</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="cell links">
+  <div class="links-inner-grid">
+    <!-- Gitbub icon, subtitle, and username -->
+    <a href="https://github.com/aaronberkson/" target="_blank" rel="noopener noreferrer" class="links-icon icon-one btn btn-info bi bi-github d-flex align-items-center" role="button"></a>
+    <div class="subtitle-one"id="subtitle"><a href="https://github.com/aaronberkson/" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    <div class="info-one" id="info"><a href="https://github.com/aaronberkson" target="_blank" rel="noopener noreferrer">@aaronberkson</a></div>
+    <!-- LinkedIn icon, subtitle, and URL subdirectory -->                        
+    <a href="https://www.linkedin.com/in/aaronberkson/" target="_blank" rel="noopener noreferrer" 
+    class="links-icon icon-two btn btn-info bi bi-linkedin d-flex align-items-center" role="button"></a>
+    <div class="subtitle-two" id="subtitle"><a href="https://www.linkedin.com/in/aaronberkson/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+    <div class="info-two" id="info"><a href="https://www.linkedin.com/in/aaronberkson/" target="_blank" rel="noopener noreferrer">/in/aaronberkson/</a></div>
+    <!-- Email icon, subtitle, and address -->                        
+    <a href="mailto: hello@aaronberkson.com"class="links-icon icon-three btn btn-info bi bi-envelope-fill d-flex align-items-center" role="button"></a>
+    <div class="subtitle-three" id="subtitle"><a href="mailto: hello@aaronberkson.com">Email</a></div>
+    <div class="info-three" id="info"><a href="mailto: hello@aaronberkson.com">hello@aaronberkson.com</a></div>
+  </div>
+</div>
+</div>
+<div class="content-wrapper" id="content">
+  <div class="about-wrapper" id="about">
+    <div class="about-grid">
+        <div class="about-title">About</div>
+        <div class="about-copy">I am a Design Technologist with a foundation in object-oriented programming with a B.S. in Computer Science from Carnegie Mellon University. I have 18+ years’ experience developing interactive media, starting with Razorfish & recently at Bloomberg. I have worked as a Technologist & User Experience Designer, in Finance, Legal, Insurance, Pharma, Tech Services, and Artificial Intelligence. My overall focus has been on enterprise business applications with complex taxonomies and workflows. I am leveling up my coding skills with the MIT xPRO: Professional Certificate in Coding: Full Stack Development with MERN (expected September 2024).</div>
+        <div class="video-title">Video Intro</div>
+        <div class="video-embed">
+          <div class="embed-responsive embed-responsive-16by9">
+            <!-- <iframe width="600" height="338" src="https://www.youtube.com/embed/xNE-NyaYBcg?si=I-zQr_3TSGZO7BiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe> -->
+            <iframe width="600" height="338" src="https://www.youtube.com/embed/Q9kzdhcVSQw?si=zXk-h14Y0LBVp0d-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="projects-wrapper" id="projects">
+      <div class="project-title">Projects</div>
+      <div class="project-thumbs">
+        <!-- Pacmen thumbnail -->
+        <a href="#" class="link-pacmen" onclick="selectProject('pacmen');" id="link-pacmen">
+          <div class="thumb-pacmen"><img src="./images/pac-man-museum.png" width="440" height="248"></div>
+          <div class="title-pacmen">Pac-Men: Simple Physics Animation</div>
+        </a>
+        <!-- Eyes thumbnail -->
+        <a href="#" class="link-eyes" onclick="selectProject('eyes');" id="link-eyes">
+          <div class="thumb-eyes"><img src="./images/smiley-hacker-2.png" width="440" height="248"></div>
+          <div class="title-eyes">Eyes: Following Mouse Movement</div>
+        </a>
+        <!-- Bus thumbnail -->
+        <a href="#" class="link-bus" onclick="selectProject('bus');" id="link-bus">
+        <div class="thumb-bus"><img src="./images/boston-bus-exposure-2.png" width="440" height="248"></div>
+        <div class="title-bus">Bus Tracker: Live Data via API</div>
+        </a>
+      </div>
+      <div class="project-description-row">
+        <div class="project-description" id="project-description-id"></div>
+      <a href="#" id="repo-btn-id" class="d-none project-btn-github-style project-repo-button btn btn-info bi bi-github d-flex align-items-center" role="button"  target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;Repo</a>
+      <a href="#" id="readme-btn-id" class="d-none project-btn-github-style project-readme-button btn btn-info bi bi-book-fill d-flex align-items-center" role="button"  target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;README</a>
+      <a href="#" id="popout-btn-id" class="d-none project-btn-popout-style project-popout-button btn btn-info bi bi-arrow-up-right-square-fill d-flex align-items-center" role="button"  target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;Pop-out</a>
+      </div>
+  </div>
+  <iframe class="portfolio-iframe" id="project-iframe" src="about:blank" scrolling="no" seamless="seamless"></iframe>
+  <div class="below-iframe" id="below-iframe-id"></div>
+</div>
+<!-- Includes for my own javascript and bootstrap js-->
+<script src="./github_portfolio.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
